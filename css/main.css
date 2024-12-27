@@ -1,5 +1,5 @@
 body {
-  weight: 100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
 
@@ -12,9 +12,20 @@ body {
 
 #active {
   /* active region, is centered inside of <body> and should be the relative size of like everythin */
+  position: relative;
 }
 
 #mapimg {
   width: 100%;
   height: 100%;
+}
+
+#dot {
+  /* debug dot */
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translate(-50%, -50%);
 }
