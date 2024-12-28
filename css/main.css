@@ -29,3 +29,10 @@ body {
   top: 0px;
   transform: translate(-50%, -50%);
 }
+
+.icon {
+  position: absolute;
+  left: 26.3%;
+  top: 50.3%;
+  filter: drop-shadow(black 5px 5px 5px);
+}
