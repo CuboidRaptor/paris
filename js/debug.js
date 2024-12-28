@@ -1,6 +1,6 @@
 // all the sketchy debug pointer stuff I made
 
-let debug = true; // this value is meant to be modified only from debug console to enable goofy things
+let debug = false; // this value is meant to be modified only from debug console to enable goofy things
 
 function round(n, d)
 {
