@@ -33,7 +33,7 @@ body {
 .icon {
   /* div containing icon and arrow */
   position: absolute;
-  width: calc(10% + 20px);
+  width: calc(8% + 20px);
   aspect-ratio: 1/1;
 }
 
@@ -63,4 +63,14 @@ body {
 #coeur {
   left: 55%;
   top: 18.9%;
+}
+
+#notredame {
+  left: 59.2%;
+  top: 56.3%;
+}
+
+#moulin {
+  left: 48.7%;
+  top: 21.6%;
 }
