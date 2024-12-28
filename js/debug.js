@@ -46,8 +46,13 @@ function debug_event(event)
     if (debug)
     {
         let dot = document.getElementById("dot")
+        dot.style.display = "initial";
         dot.style.left = to_wperc(event.clientX);
         dot.style.top = to_hperc(event.clientY);
+    }
+    else
+    {
+        dot.style.display = "none";
     }
 }
 
