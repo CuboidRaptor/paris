@@ -77,3 +77,15 @@ addEventListener("resize", resized);
 addEventListener("mousemove", debug_event);
 addEventListener("mousedown", click_debug_event);
 resized();
+
+let iconelements = document.getElementsByClassName("icon");
+
+for (let i = 0; i < iconelements.length; i++) {
+   let elem = iconelements.item(i);
+
+   let arrowimg = document.createElement("img");
+   arrowimg.src = "img/arrow.png";
+   arrowimg.classList.add("arrow");
+
+   elem.appendChild(arrowimg);
+}

@@ -38,9 +38,16 @@ body {
 }
 
 .iconimg {
+  position: absolute;
   width: 100%;
   height: 100%;
   filter: drop-shadow(black 5px 5px 5px);
+}
+
+.arrow {
+  position: absolute;
+  width: calc(20% + 2px);
+  aspect-ratio: 1/1;
 }
 
 #eiffel {
