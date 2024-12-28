@@ -31,8 +31,19 @@ body {
 }
 
 .icon {
+  /* div containing icon and arrow */
   position: absolute;
+  width: calc(10% + 20px);
+  aspect-ratio: 1/1;
+}
+
+.iconimg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(black 5px 5px 5px);
+}
+
+#eiffel {
   left: 26.3%;
   top: 50.3%;
-  filter: drop-shadow(black 5px 5px 5px);
 }
