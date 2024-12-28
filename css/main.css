@@ -50,6 +50,7 @@ body {
   aspect-ratio: 1/1;
 }
 
+/* id's for images, percentage coordinates are hard coded and found using the debug pointer tool*/
 #eiffel {
   left: 26.3%;
   top: 50.3%;
@@ -73,4 +74,14 @@ body {
 #moulin {
   left: 48.7%;
   top: 21.6%;
+}
+
+#invalides {
+  left: 37%;
+  top: 53.2%;
+}
+
+#palais {
+  left: 49%;
+  top: 38.5%;
 }
