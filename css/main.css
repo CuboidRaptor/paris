@@ -35,6 +35,11 @@ body {
   position: absolute;
   width: calc(8% + 20px);
   aspect-ratio: 1/1;
+  transition: width 0.2s;
+}
+
+.icon:hover {
+  width: calc(9% + 22.5px);
 }
 
 .iconimg {
@@ -43,6 +48,14 @@ body {
   height: 100%;
   filter: drop-shadow(black 5px 5px 5px);
 }
+  /*
+  animation-fill-mode: forwards;
+}
+@keyframes pop {
+    from {width: calc(8% + 20px);}
+    to {width: calc(9% + 22.5px);}
+}
+*/
 
 .arrow {
   position: absolute;
