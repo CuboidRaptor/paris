@@ -16,13 +16,14 @@ function resized(event)
 let iconelements = document.getElementsByClassName("icon");
 
 for (let i = 0; i < iconelements.length; i++) {
-   let elem = iconelements.item(i);
+    let elem = iconelements.item(i);
 
-   let arrowimg = document.createElement("img");
-   arrowimg.src = "img/arrow.png";
-   arrowimg.classList.add("arrow");
+    let arrowimg = document.createElement("img"); // add arrow
+    arrowimg.src = "img/arrow.png";
+    arrowimg.classList.add("arrow");
+    elem.appendChild(arrowimg);
 
-   elem.appendChild(arrowimg);
+    elem.addEventListener("click", (event) => {console.log(event.currentTarget.id);})
 }
 
 addEventListener("resize", resized);
