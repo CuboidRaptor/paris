@@ -1,116 +1,123 @@
 body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-  /*background-image: url("../img/45degreee_fabric.png");*/
-  background-image: url("../img/white_carbon.png");
+    /*background-image: url("../img/45degreee_fabric.png");*/
+    background-image: url("../img/white_carbon.png");
 }
 
 #active {
-  /* active region, is centered inside of <body> and should be the relative size of like everythin */
-  position: relative;
+    /* active region, is centered inside of <body> and should be the relative size of like everythin */
+    position: relative;
 }
 
 #mapimg {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #dot {
-  /* debug dot */
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  transform: translate(-50%, -50%);
-  display: none;
+    /* debug dot */
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .icon {
-  /* div containing icon and arrow */
-  position: absolute;
-  width: calc(8% + 20px);
-  aspect-ratio: 1/1;
-  transition: width 0.2s;
+    /* div containing icon and arrow */
+    position: absolute;
+    width: calc(8% + 20px);
+    aspect-ratio: 1/1;
+    transition: width 0.2s;
 }
 
 .icon:hover {
-  width: calc(9% + 22.5px);
+    width: calc(9% + 22.5px);
 }
 
 .iconimg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  filter: drop-shadow(black 5px 5px 5px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(black 5px 5px 5px);
 }
-  /*
-  animation-fill-mode: forwards;
-}
-@keyframes pop {
-    from {width: calc(8% + 20px);}
-    to {width: calc(9% + 22.5px);}
-}
-*/
 
 .arrow {
-  position: absolute;
-  width: calc(20% + 2px);
-  aspect-ratio: 1/1;
+    position: absolute;
+    width: calc(20% + 2px);
+    aspect-ratio: 1/1;
 }
 
 /* id's for images, percentage coordinates are hard coded and found using the debug pointer tool*/
 #eiffel {
-  left: 26.3%;
-  top: 50.3%;
+    left: 26.3%;
+    top: 50.3%;
 }
 
 #triomphe {
-  left: 26.6%;
-  top: 33%;
+    left: 26.6%;
+    top: 33%;
 }
 
 #coeur {
-  left: 55%;
-  top: 18.9%;
+    left: 55%;
+    top: 18.9%;
 }
 
 #notredame {
-  left: 59.2%;
-  top: 56.3%;
+    left: 59.2%;
+    top: 56.3%;
 }
 
 #moulin {
-  left: 48.7%;
-  top: 21.6%;
+    left: 48.7%;
+    top: 21.6%;
 }
 
 #invalides {
-  left: 37%;
-  top: 53.2%;
+    left: 37%;
+    top: 53.2%;
 }
 
 #palais {
-  left: 49%;
-  top: 38.5%;
+    left: 49%;
+    top: 38.5%;
 }
 
 #pantheon {
-  left: 56.8%;
-  top: 63.2%;
+    left: 56.8%;
+    top: 63.2%;
 }
 
 #lyon {
-  left: 72.6%;
-  top: 65.8%;
+    left: 72.6%;
+    top: 65.8%;
 }
 
 #box {
-  background-color: blue;
-  float: right;
+    background-color: blue;
+    float: right;
+}
+
+#flexdiv {
+    position: fixed; /* fullscreen so we can center comics both ways */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    pointer-events: none; /* click through so weather data is selectable */
+}
+
+#sidebar {
+    pointer-events: auto;
+    background-color: blue;
 }
