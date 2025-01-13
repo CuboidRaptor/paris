@@ -94,12 +94,12 @@ body {
     transition: right 0.5s ease-in-out;
 }
 
-#sbtitle {
-    font-family: "Ubuntu", sans-serif;
+.sbtext {
     margin-left: 5px;
     margin-right: 5px;
     width: calc(100% - 40px); /* 40px is this margin-left/margin-right - right and width of #xbutton */
     user-select: text;
+    font-family: "Ubuntu", sans-serif;
 }
 
 #xbutton {
