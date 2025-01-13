@@ -14,6 +14,14 @@ function resized(event)
     active.style.height = (Math.min(vw / imgw, vh / imgh) * imgh).toString() + "px";
 }
 
+function clicked(event) {
+    console.log(event.currentTarget.id);
+    let sidebar = document.getElementById("sidebar");
+
+    sidebar.style.display = "block";
+    sidebar.style.right = "0px";
+}
+
 let iconelements = document.getElementsByClassName("icon");
 
 for (let i = 0; i < iconelements.length; i++) {
@@ -24,7 +32,7 @@ for (let i = 0; i < iconelements.length; i++) {
     arrowimg.classList.add("arrow");
     elem.appendChild(arrowimg);
 
-    elem.addEventListener("click", (event) => {console.log(event.currentTarget.id);})
+    elem.addEventListener("click", clicked)
 }
 
 addEventListener("resize", resized);

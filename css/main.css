@@ -11,7 +11,7 @@ body {
 }
 
 #active {
-    /* active region, is centered inside of <body> and should be the relative size of like everythin */
+    /* active region, is centered inside of <body> and should be the relative size of like everything */
     position: relative;
 }
 
@@ -122,8 +122,10 @@ body {
     pointer-events: auto;
     background-color: blue;
     position: absolute;
-    right: 0;
+    right: -15%; /* off the screen so we can animate it on */
     top: 0;
     bottom: 0;
     width: 15%;
+    display: none; /* only display when needed */
+    transition: right 0.5s ease-in-out;
 }
