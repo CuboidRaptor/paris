@@ -16,18 +16,26 @@ function resized(event)
 }
 
 function clicked(event) {
+    let curid = event.currentTarget.id;
     let sidebar = document.getElementById("sidebar");
     let title = document.getElementById("sbtitle");
+    let text = document.getElementById("sbtext");
 
     sidebar.classList.remove("righttransition");
     sidebar.style.right = "-25%";
     document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow...
 
-    let newtitle = gdata.idtitles[event.currentTarget.id];
+    let newtitle = gdata.idtitles[curid];
     if (newtitle === undefined) {
-        throw new Error("CSS ID nonexistent in idmap");
+        throw new Error("CSS ID nonexistent in idtitles map");
     }
     title.innerHTML = newtitle;
+
+    let newtext = gdata.blurbs[curid];
+    if (newtext === undefined) {
+        throw new Error("CSS ID nonexistent in blurbs map");
+    }
+    text.innerHTML = newtext;
 
     sidebar.classList.add("righttransition"); // <-- ...so this stuff actually transitions
     sidebar.style.right = "0px";
