@@ -44,6 +44,14 @@ function clicked(event) {
     sidebar.style.right = "0px";
 }
 
+function xclicked(event) {
+    let sidebar = document.getElementById("sidebar");
+
+    sidebar.classList.add("righttransition");
+    sidebar.style.right = "-25%";
+    document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow...
+}
+
 let iconelements = document.getElementsByClassName("icon");
 
 for (let i = 0; i < iconelements.length; i++) {
@@ -59,3 +67,5 @@ for (let i = 0; i < iconelements.length; i++) {
 
 addEventListener("resize", resized);
 resized();
+
+document.getElementById("xbutton").addEventListener("click", xclicked)
