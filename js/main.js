@@ -2,6 +2,7 @@
 // representative of the aspect ratio
 const imgw = 5;
 const imgh = 4;
+// const gdata impmorted from data.js
 
 function resized(event)
 {
@@ -14,18 +15,6 @@ function resized(event)
     active.style.height = (Math.min(vw / imgw, vh / imgh) * imgh).toString() + "px";
 }
 
-const idmap = {
-    eiffel: "La Tour Eiffel",
-    triomphe: "L'Arc de Triomphe de l'Étoile",
-    coeur: "La Basilique du Sacré-Cœur",
-    notredame: "La Cathédrale Notre-Dame de Paris",
-    moulin: "Le Moulin-Rouge",
-    invalides: "L'Hôtel des Invalides",
-    palais: "Le Palais Garnier",
-    pantheon: "Le Panthéon de Paris",
-    lyon: "La Gare de Lyon"
-}
-
 function clicked(event) {
     let sidebar = document.getElementById("sidebar");
     let title = document.getElementById("sbtitle");
@@ -34,7 +23,7 @@ function clicked(event) {
     sidebar.style.right = "-25%";
     document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow...
 
-    let newtitle = idmap[event.currentTarget.id];
+    let newtitle = gdata.idtitles[event.currentTarget.id];
     if (newtitle === undefined) {
         throw new Error("CSS ID nonexistent in idmap");
     }
