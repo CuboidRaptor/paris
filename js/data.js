@@ -16,7 +16,7 @@ gdata = {
         coeur: `Une église qui est consacrée au cœur de Jésus.`,
         notredame: `Une cathédrale très historique et grande. Il a plus d'art inestimable.`,
         moulin: ``,
-        invalides: `C'est un complexe des beaucoup des bâtiments et des cours`,
+        invalides: `C'est un complexe de beaucoup des bâtiments et des cours. Il est devenu un musée et une tombe.`,
         palais: ``,
         pantheon: ``,
         lyon: ``
