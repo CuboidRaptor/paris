@@ -118,13 +118,18 @@ body {
     width: 30px;
     height: 30px;
     display: flex;
-    border-radius: 4px;
+    border-radius: 6px;
     border-style: outset;
     border-width: 2px;
 }
 
 #xbutton:hover {
     background-color: #eebbbb;
+}
+
+#xbutton:active {
+    border-style: inset;
+    background-color: #cc8888;
 }
 
 #xbimg {
