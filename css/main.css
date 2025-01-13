@@ -96,9 +96,16 @@ body {
 .sbtext {
     margin-left: 5px;
     margin-right: 5px;
-    width: calc(100% - 10px); /* 40px is this margin-left/margin-right - right and width of #xbutton */
     user-select: text;
     font-family: "Ubuntu", sans-serif;
+}
+
+#sbtitle {
+    width: calc(100% - 40px); /* 40px is this margin-left/margin-right - right and width of #xbutton */
+}
+
+#sbtext {
+    width: calc(100% - 10px); /* only account for #sbtext margins */
 }
 
 #xbutton {
