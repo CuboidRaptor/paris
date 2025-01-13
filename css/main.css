@@ -102,7 +102,8 @@ body {
 }
 
 #sbtitle {
-    width: calc(100% - 40px); /* 40px is this margin-left/margin-right - right and width of #xbutton */
+    width: calc(100% - 55px); /* 40px is this's margin-left/margin-right + right and width of #xbutton
+        + 5px more of margin */
 }
 
 #sbtext {
@@ -110,13 +111,19 @@ body {
 }
 
 #xbutton {
-    padding: 4px;
     background-color: white;
     position: absolute;
     top: 10px;
     right: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+#xbimg {
     width: 20px;
     height: auto;
+    margin: auto;
 }
 
 #xbutton:hover {
