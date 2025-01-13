@@ -21,11 +21,11 @@ Il honore les soldats tués dans ces guerres et c’est un monument très import
         coeur: `La basilique du Sacré-Cœur de Montmartre est une église qui est consacrée au cœur de Jésus.`,
         notredame: `Beaucoup de personnes connaissent Notre-Dame, qui est une cathédrale très historique et grande.\
 Il a plus d'art inestimable.`,
-        moulin: ``,
+        moulin: ``, // no
         invalides: `C'est un complexe de beaucoup de bâtiments et de cours. Il est devenu un musée et une tombe.`,
         palais: `Le Palais Garnier, aussi connu sous le nom de l'Opéra Garnier, est un plus grand théâtre et une académie des arts.`,
         pantheon: `Le Panthéon est un monument situé dans le 5ᵉ arrondissement de Paris.\
 Il a été une église, puis il est devenu un mausolée et un musée pour les personnes importantes de Paris.`,
-        lyon: ``
+        lyon: `` // no
     }
 }
