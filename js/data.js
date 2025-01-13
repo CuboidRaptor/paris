@@ -17,7 +17,7 @@ gdata = {
         notredame: `Une cathédrale très historique et grande. Il a plus d'art inestimable.`,
         moulin: ``,
         invalides: `C'est un complexe de beaucoup des bâtiments et des cours. Il est devenu un musée et une tombe.`,
-        palais: ``,
+        palais: `La Palais Garnier, aussi connu sous le nom de l'Opéra Garnier`,
         pantheon: ``,
         lyon: ``
     }
