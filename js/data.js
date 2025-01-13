@@ -9,7 +9,7 @@ gdata = {
         notredame: "La Cathédrale Notre-Dame de Paris",
         moulin: "Le Moulin-Rouge",
         invalides: "L'Hôtel des Invalides",
-        palais: "Le Palais Garnier",
+        garnier: "Le Palais Garnier",
         pantheon: "Le Panthéon de Paris",
         lyon: "La Gare de Lyon"
     },
@@ -23,7 +23,7 @@ Il honore les soldats tués dans ces guerres et c’est un monument très import
 Il a plus d'art inestimable.`,
         moulin: ``, // no
         invalides: `C'est un complexe de beaucoup de bâtiments et de cours. Il est devenu un musée et une tombe.`,
-        palais: `Le Palais Garnier, aussi connu sous le nom de l'Opéra Garnier, est un plus grand théâtre et une académie des arts.`,
+        garnier: `Le Palais Garnier, aussi connu sous le nom de l'Opéra Garnier, est un plus grand théâtre et une académie des arts.`,
         pantheon: `Le Panthéon est un monument situé dans le 5ᵉ arrondissement de Paris. \
 Il a été une église, puis il est devenu un mausolée et un musée pour les personnes importantes de Paris.`,
         lyon: `` // no
