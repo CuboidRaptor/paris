@@ -49,6 +49,10 @@ body {
     width: calc(9% + 22.5px);
 }
 
+.icon:active {
+    filter: brightness(85%);
+}
+
 .iconimg {
     border-radius: 0px 12px 12px 12px;
     position: absolute;
