@@ -7,7 +7,8 @@ body {
 
     align-items: center;
     justify-content: center;
-    background-image: url("../img/moroccan-flower.png");
+    background: linear-gradient(rgba(0,0,255,0.02), rgba(0,0,255,0.02)),
+        url("../img/moroccan-flower.png");
     font-family: "Helvetica", sans-serif;
     pointer-events: none;
     user-drag: none;
@@ -85,7 +86,7 @@ body {
     top: 0;
     bottom: 0;
     width: 25%;
-    background: linear-gradient(rgba(240,240,255,0.6), rgba(240,240,255,0.6)),
+    background: linear-gradient(rgba(245,245,255,0.7), rgba(245,245,255,0.7)),
         url("../img/spikes.webp");
 }
 
