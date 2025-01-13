@@ -111,7 +111,7 @@ body {
 }
 
 #xbutton {
-    background-color: white;
+    background-color: #fff8f8;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -120,15 +120,15 @@ body {
     display: flex;
 }
 
+#xbutton:hover {
+    background-color: #eebbbb;
+}
+
 #xbimg {
     width: 20px;
     height: auto;
     margin: auto;
     pointer-events: none;
-}
-
-#xbutton:hover {
-    background-color: aquamarine;
 }
 
 /* id's for images, percentage coordinates are hard coded and found using the debug pointer tool*/
