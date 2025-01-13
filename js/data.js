@@ -11,12 +11,12 @@ gdata = {
         lyon: "La Gare de Lyon"
     },
     "blurbs": {
-        eiffel: ``,
-        triomphe: ``,
-        coeur: ``,
-        notredame: ``,
+        eiffel: `C'est le premier monument de Paris. Si vous allez en France, vous ne pourrez pas sortir avant de visiter la tour Eiffel.`,
+        triomphe: `Un symbole de la révolution français et des guerres napoléoniennes. Il honore les soldats tués dans ces guerres et c’est un monument très important de Paris.`,
+        coeur: `Une église qui est consacrée au cœur de Jésus.`,
+        notredame: `Une cathédrale très historique et grande. Il a plus d'art inestimable.`,
         moulin: ``,
-        invalides: ``,
+        invalides: `C'est un complexe des beaucoup des bâtiments et des cours`,
         palais: ``,
         pantheon: ``,
         lyon: ``
