@@ -87,11 +87,13 @@ body {
 #sidebar {
     pointer-events: auto;
     background-color: blue;
+    
     position: absolute;
     right: -25%; /* off the screen so we can animate it on */
     top: 0;
     bottom: 0;
     width: 25%;
+
     background: linear-gradient(rgba(245,245,255,0.7), rgba(245,245,255,0.7)),
         url("../img/spikes.webp");
 }
@@ -118,7 +120,7 @@ body {
 }
 
 #sbimg {
-    width: calc(100% - 10px); /* only account for #sbtext margins */
+    width: calc(100% - 10px);
     height: auto;
     border-radius: 16px;
 }
@@ -130,7 +132,9 @@ body {
     right: 10px;
     width: 30px;
     height: 30px;
+
     display: flex;
+
     border-radius: 6px;
     border-style: outset;
     border-width: 2px;
