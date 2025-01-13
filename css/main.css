@@ -11,19 +11,18 @@ body {
     background: linear-gradient(rgba(245,245,255,0.5), rgba(245,245,255,0.5)),
         url("../img/white_carbon.png");
     font-family: "Helvetica", sans-serif;
+    user-select: none;
 }
 
 #active {
     /* active region, is centered inside of <body> and should be the relative size of like everything */
     position: relative;
-    user-select: none;
 }
 
 #mapimg {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    user-select: none;
 }
 
 #dot {
@@ -43,7 +42,6 @@ body {
     width: calc(8% + 20px);
     aspect-ratio: 1/1;
     transition: width 0.2s;
-    user-select: none;
 }
 
 .icon:hover {
@@ -56,7 +54,6 @@ body {
     height: 100%;
     filter: drop-shadow(black 5px 5px 5px);
     pointer-events: none;
-    user-select: none;
 }
 
 .arrow {
@@ -64,7 +61,6 @@ body {
     width: calc(20% + 2px);
     aspect-ratio: 1/1;
     pointer-events: none;
-    user-select: none;
 }
 
 #box {
