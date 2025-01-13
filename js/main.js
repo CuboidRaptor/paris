@@ -20,8 +20,8 @@ function clicked(event) {
 
     sidebar.classList.remove("righttransition");
     sidebar.style.right = "-20%";
-    document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow
-    sidebar.classList.add("righttransition"); // <-- so this stuff actually transitions
+    document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow...
+    sidebar.classList.add("righttransition"); // <-- ...so this stuff actually transitions
     sidebar.style.right = "0px";
 }
 

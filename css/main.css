@@ -6,8 +6,8 @@ body {
     align-items: center;
     justify-content: center;
 
-    /*background-image: url("../img/45degreee_fabric.png");*/
-    background-image: url("../img/white_carbon.png");
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+        url("../img/white_carbon.png");
 }
 
 #active {
@@ -126,6 +126,7 @@ body {
     top: 0;
     bottom: 0;
     width: 20%;
+    background-image: url("../img/denim.webp");
 }
 
 .righttransition {
