@@ -49,7 +49,6 @@ function xclicked(event) {
 
     sidebar.classList.add("righttransition");
     sidebar.style.right = "-25%";
-    document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow...
 }
 
 let iconelements = document.getElementsByClassName("icon");
