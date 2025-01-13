@@ -100,7 +100,7 @@ body {
     transition: right 0.5s ease-in-out;
 }
 
-.sbtext {
+.sb {
     margin-left: 5px;
     margin-right: 5px;
     user-select: text;
@@ -115,6 +115,11 @@ body {
 
 #sbtext {
     width: calc(100% - 10px); /* only account for #sbtext margins */
+}
+
+#sbimg {
+    width: calc(100% - 10px); /* only account for #sbtext margins */
+    height: auto;
 }
 
 #xbutton {

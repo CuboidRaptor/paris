@@ -20,10 +20,11 @@ function clicked(event) {
     let sidebar = document.getElementById("sidebar");
     let title = document.getElementById("sbtitle");
     let text = document.getElementById("sbtext");
+    let photo = document.getElementById("sbimg");
 
     sidebar.classList.remove("righttransition");
     sidebar.style.right = "-25%";
-    document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow...
+    document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow
 
     let newtitle = gdata.idtitles[curid];
     if (newtitle === undefined) {
@@ -37,7 +38,10 @@ function clicked(event) {
     }
     text.innerHTML = newtext;
 
-    sidebar.classList.add("righttransition"); // <-- ...so this stuff actually transitions
+    photo.src = `../img/photos/${curid}.png`;
+    photo.title = newtitle;
+
+    sidebar.classList.add("righttransition");
     sidebar.style.right = "0px";
 }
 
