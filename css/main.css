@@ -12,6 +12,7 @@ body {
         url("../img/white_carbon.png");
     font-family: "Helvetica", sans-serif;
     pointer-events: none;
+    user-drag: none;
     user-select: none;
 }
 
@@ -54,6 +55,7 @@ body {
     width: 100%;
     height: 100%;
     filter: drop-shadow(black 5px 5px 5px);
+    pointer-events: none;
 }
 
 .arrow {
@@ -97,6 +99,7 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     width: calc(100% - 40px); /* 40px is this margin-left/margin-right - right and width of #xbutton */
+    user-select: text;
 }
 
 #xbutton {
