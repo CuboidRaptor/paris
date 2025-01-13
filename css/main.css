@@ -7,7 +7,7 @@ body {
 
     align-items: center;
     justify-content: center;
-    background-image: url(/img/icons/moroccan-flower\ \(1\).png);
+    background-image: url(../img/moroccan-flower.png);
     font-family: "Helvetica", sans-serif;
     pointer-events: none;
     user-drag: none;
