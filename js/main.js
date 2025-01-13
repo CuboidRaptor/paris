@@ -6,7 +6,8 @@ const imgh = 4;
 function resized(event)
 {
     let active = document.getElementById("active");
-    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) * 0.9;
+    // 0.85 is 1-15%, from sidebar css
+    let vw = Math.max((document.documentElement.clientWidth * 0.85) || 0, (window.innerWidth * 0.85) || 0) * 0.9;
     let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) * 0.9;
 
     active.style.width = (Math.min(vw / imgw, vh / imgh) * imgw).toString() + "px";

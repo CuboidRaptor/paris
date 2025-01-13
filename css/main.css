@@ -102,6 +102,7 @@ body {
     top: 65.8%;
 }
 
+/* not coords shit */
 #box {
     background-color: blue;
     float: right;
@@ -120,4 +121,9 @@ body {
 #sidebar {
     pointer-events: auto;
     background-color: blue;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 15%;
 }
