@@ -19,7 +19,9 @@ function clicked(event) {
     let sidebar = document.getElementById("sidebar");
 
     sidebar.style.display = "block";
-    sidebar.style.right = "0px";
+    setTimeout(() => { // queue as event unless css getss confused and doesn't animate because display: block; set
+        sidebar.style.right = "0px";
+    }, 0);  // fucking browser js moment, this is
 }
 
 let iconelements = document.getElementsByClassName("icon");

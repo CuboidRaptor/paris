@@ -123,9 +123,9 @@ body {
     background-color: blue;
     position: absolute;
     right: -15%; /* off the screen so we can animate it on */
+    transition: right 0.5s ease-in-out;
     top: 0;
     bottom: 0;
     width: 15%;
     display: none; /* only display when needed */
-    transition: right 0.5s ease-in-out;
 }
