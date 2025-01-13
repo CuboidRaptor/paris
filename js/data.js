@@ -18,7 +18,7 @@ gdata = {
 vous ne pourrez pas sortir avant de visiter la tour Eiffel.`,
         triomphe: `Un symbole de la révolution français et des guerres napoléoniennes. \
 Il honore les soldats tués dans ces guerres et c’est un monument très important de Paris.`,
-        coeur: `La basilique du Sacré-Cœur de Montmartre est une église qui est consacrée au cœur de Jésus.`,
+        coeur: `La Basilique du Sacré-Cœur de Montmartre est une église qui est consacrée au cœur de Jésus.`,
         notredame: `Beaucoup de personnes connaissent Notre-Dame, qui est une cathédrale très historique et grande. \
 Il a plus d'art inestimable.`,
         moulin: ``, // no
