@@ -148,4 +148,14 @@ body {
 #sbtitle {
     font-family: "Ubuntu", sans-serif;
     margin-left: 5px;
+    margin-right: 5px;
+    width: calc(100% - 40px); /* 40px is this margin-left/margin-right - right and width of #xbutton */
+}
+
+#xbutton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: auto;
 }
