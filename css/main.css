@@ -122,10 +122,12 @@ body {
     pointer-events: auto;
     background-color: blue;
     position: absolute;
-    right: -15%; /* off the screen so we can animate it on */
-    transition: right 0.5s ease-in-out;
+    right: -20%; /* off the screen so we can animate it on */
     top: 0;
     bottom: 0;
-    width: 15%;
-    display: none; /* only display when needed */
+    width: 20%;
+}
+
+.righttransition {
+    transition: right 0.5s ease-in-out;
 }

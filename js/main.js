@@ -18,10 +18,11 @@ function clicked(event) {
     console.log(event.currentTarget.id);
     let sidebar = document.getElementById("sidebar");
 
-    sidebar.style.display = "block";
-    setTimeout(() => { // queue as event unless css getss confused and doesn't animate because display: block; set
-        sidebar.style.right = "0px";
-    }, 0);  // fucking browser js moment, this is
+    sidebar.classList.remove("righttransition");
+    sidebar.style.right = "-20%";
+    document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow
+    sidebar.classList.add("righttransition"); // <-- so this stuff actually transitions
+    sidebar.style.right = "0px";
 }
 
 let iconelements = document.getElementsByClassName("icon");
