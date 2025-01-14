@@ -31,8 +31,10 @@ function clicked(event) {
     let photo = document.getElementById("sbimg");
 
     sidebar.classList.remove("righttransition");
+    sidebar.style.right = "-25.0001%"; // chat I know this looks fucked but it's to reset transitions properly
+    document.body.offsetHeight; // this is to trigger a reflow so the reset works
     sidebar.style.right = "-25%";
-    document.body.offsetHeight; // chat I know this looks fucked but it's to trigger a reflow
+    document.body.offsetHeight; // again, so the next transition works
 
     let newtitle = gdata.idtitles[curid];
     if (newtitle === undefined) {
@@ -60,10 +62,7 @@ function xclicked(event) {
     let sidebar = document.getElementById("sidebar");
 
     sidebar.classList.add("righttransition");
-    sidebar.style.right = "-25.0001%"; /* chat I know this looks fried alright you gotta believe me
-        yeah so it's so that closing and then quickly opening another one fuilly resets before starting
-        the next animation or else it looks cooked and if it isn't 25.0000000000% then css optimises it
-        out of existence */
+    sidebar.style.right = "-25%";
 
     cursb = "";
 }
