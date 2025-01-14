@@ -30,6 +30,9 @@ body {
     text-align: center;
     font-family: "Expletus Sans", sans-serif;
     font-size: calc(4vh + 8px);
+
+    text-shadow: 0.05em 0.05em 0.08em #ff6666,
+        -0.05em -0.05em 0.08em #6666ff;
 }
 
 #mapimg {
