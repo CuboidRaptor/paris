@@ -4,6 +4,8 @@ const imgw = 5;
 const imgh = 4;
 // const gdata impmorted from data.js
 
+let cursb = "" // current css id of sidebar monument
+
 function resized(event)
 {
     let active = document.getElementById("active");
@@ -17,6 +19,12 @@ function resized(event)
 
 function clicked(event) {
     let curid = event.currentTarget.id;
+
+    if (cursb === curid) {
+        xclicked(event); // same button repressed, so just close the sidebar
+        return;
+    }
+
     let sidebar = document.getElementById("sidebar");
     let title = document.getElementById("sbtitle");
     let text = document.getElementById("sbtext");
@@ -44,13 +52,20 @@ function clicked(event) {
 
     sidebar.classList.add("righttransition");
     sidebar.style.right = "0px";
+
+    cursb = curid;
 }
 
 function xclicked(event) {
     let sidebar = document.getElementById("sidebar");
 
     sidebar.classList.add("righttransition");
-    sidebar.style.right = "-25%";
+    sidebar.style.right = "-25.0001%"; /* chat I know this looks fried alright you gotta believe me
+        yeah so it's so that closing and then quickly opening another one fuilly resets before starting
+        the next animation or else it looks cooked and if it isn't 25.0000000000% then css optimises it
+        out of existence */
+
+    cursb = "";
 }
 
 let iconelements = document.getElementsByClassName("icon");
