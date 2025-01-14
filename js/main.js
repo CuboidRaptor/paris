@@ -49,7 +49,7 @@ function clicked(event) {
     text.innerHTML = newtext;
 
     photo.src = "";
-    photo.src = `../img/photos/${curid}.png`;
+    photo.src = `./img/photos/${curid}.png`;
     photo.title = newtitle;
 
     sidebar.classList.add("righttransition");
