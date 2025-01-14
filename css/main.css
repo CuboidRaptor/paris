@@ -118,24 +118,24 @@ body {
 }
 
 .sb {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     user-select: text;
     font-family: "Ubuntu", sans-serif;
 }
 
 #sbtitle {
-    width: calc(100% - 55px); /* 40px is this's margin-left/margin-right + right and width of #xbutton
+    width: calc(100% - 75px); /* 40px is .sb's margin-left/margin-right + right and width of #xbutton
         + 5px more of margin */
     margin-bottom: 40px;
 }
 
 #sbtext {
-    width: calc(100% - 10px); /* only account for #sbtext margins */
+    width: calc(100% - 20px); /* only account for #sbtext margins */
 }
 
 #sbimg {
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
     height: auto;
     border-radius: 16px;
 }
